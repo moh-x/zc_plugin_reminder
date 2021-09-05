@@ -18,7 +18,7 @@ router.route('/reminders/:id').delete(reminderController.deleteReminder)
 router.post('/reminders', reminderValidation, reminderController.create)
 router.route('/getReminders').get(reminderController.findAll)
 router.get('/reminders', reminderController.getAll)
+router.get('/xodeeq-reminders', reminderController.getAll) // personal testing link
 router.get('/upcoming', reminderController.getUpcomingReminders)
-
 
 export default router
